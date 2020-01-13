@@ -70,7 +70,7 @@ The main handlers are:
         dnd-gold
 
 # Example
-An example to echo your custom post DND can be done like so:
+An example to echo your custom DND post fields can be done like so:
 
         $mainhitpoints = esc_attr( get_post_meta( get_the_ID(), 'main-hitpoints', true ) );
         if ($mainhitpoints == '') {
