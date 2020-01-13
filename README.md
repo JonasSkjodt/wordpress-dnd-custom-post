@@ -2,7 +2,7 @@
 
 A starter kit for custom post type DND character creation in Wordpress.
 
-Grab the main handlers and create your own template with the sanitized input data.
+Grab the main handlers after installing the plugin and create your own template with the sanitized input data.
 
 The main handlers are:
 
