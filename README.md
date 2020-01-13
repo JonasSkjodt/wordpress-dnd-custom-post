@@ -1,6 +1,6 @@
 # Custom post type for DND character creation
 
-A starter kit for custom post type DND character creation.
+A starter kit for custom post type DND character creation in Wordpress.
 
 Grab the main handlers and create your own template with the sanitized input data.
 
