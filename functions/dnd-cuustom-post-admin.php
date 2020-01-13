@@ -278,9 +278,9 @@ add_action( 'save_post', 'dnd_character_choose_radio_save_meta_box_data' );
  
 function dnd_race_choose_radio() {
 
-		//redo the same thing from line 21 and down with a new selection
+	//new meta box for the race choices
         add_meta_box(
-                'race_sectionid', 'Choose your race', 'dnd_race_choose_radio_callback', 'dndcharacters'
+           'race_sectionid', 'Choose your race', 'dnd_race_choose_radio_callback', 'dndcharacters'
         );
 
 }
