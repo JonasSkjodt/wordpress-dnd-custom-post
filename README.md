@@ -72,9 +72,9 @@ The main handlers are:
 
 An example to echo your custom post DND can be done like so:
 
-<?php
+
   //get the custom field data
-  $mainhitpoints = esc_attr( get_post_meta( get_the_ID(), 'main-hitpoints', true ) );
+$mainhitpoints = esc_attr( get_post_meta( get_the_ID(), 'main-hitpoints', true ) );
 
   //if the input hasn't been filled out
 	if ($mainhitpoints == '') {
@@ -83,8 +83,8 @@ An example to echo your custom post DND can be done like so:
   //otherwise show the input
 	} else {
 	  echo $mainhitpoints;
-	}
-?>
+}
+
 
 # Demo
 
