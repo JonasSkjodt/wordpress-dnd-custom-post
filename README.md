@@ -69,23 +69,16 @@ The main handlers are:
         //gold
         'dnd-gold',	
 
-
+# Example
 An example to echo your custom post DND can be done like so:
 
-
-$mainhitpoints = esc_attr( get_post_meta( get_the_ID(), 'main-hitpoints', true ) );
-
-  if ($mainhitpoints == '') {
-    
-    echo '-';
-
-  } else {
-
-    echo $mainhitpoints;
-    
-}
-
+        $mainhitpoints = esc_attr( get_post_meta( get_the_ID(), 'main-hitpoints', true ) );
+        if ($mainhitpoints == '') {
+        echo '-';
+        } else {
+        echo $mainhitpoints;
+        }
 
 # Demo
 
-A demo template to accompany the plugin can be seen here: https://worklizard.com/dnd-characters/krumdir/
+https://worklizard.com/dnd-characters/krumdir/
