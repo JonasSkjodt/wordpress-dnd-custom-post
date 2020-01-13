@@ -2,8 +2,8 @@
 defined( 'ABSPATH' ) or die( 'cheats?' );
 /**
  * Plugin Name: Worklizard DnD Characters
- * Plugin URI: https://github.com/JonasSkjodt/wordpress-dnd-custom-post
- * Description: Post editor for DnD character creation
+ * Plugin URI: https://github.com/JonasSkjodt/wordpress-dnd-custom-post/
+ * Description: Wordpress custom post editor for DnD character creation
  * Version: 0.1
  * Author: Jonas skjodt
  * Author URI: https://github.com/JonasSkjodt/
@@ -62,7 +62,7 @@ function dnd_character_save_meta_box( $post_id ) {
     if ( $parent_id = wp_is_post_revision( $post_id ) ) {
         $post_id = $parent_id;
     }
-    $fields = [ // show our fields
+    $fields = [ // show our input fields
         
         // main handlers
         'main-hitpoints',
@@ -71,7 +71,7 @@ function dnd_character_save_meta_box( $post_id ) {
 
         // race and class details
         'main-race',
-		'main-subrace',
+	'main-subrace',
         'main-class', 
         'main-age',
         'main-work',
@@ -112,20 +112,20 @@ function dnd_character_save_meta_box( $post_id ) {
         'skill-stealth',
         'skill-survival',
 		
-		//weapons
-		'weapon-basic',
-		'weapon-battleaxe',
-		'weapon-crossbow',
-		'weapon-dagger',
-		'weapon-handaxe',
-		'weapon-lighthammer',
-		'weapon-longsword',
-		'weapon-shortbow',
-		'weapon-shortsword',
-		'weapon-rapier',
+	//weapons
+	'weapon-basic',
+	'weapon-battleaxe',
+	'weapon-crossbow',
+	'weapon-dagger',
+	'weapon-handaxe',
+	'weapon-lighthammer',
+	'weapon-longsword',
+	'weapon-shortbow',
+	'weapon-shortsword',
+	'weapon-rapier',
 		
-		//gold
-		'dnd-gold',	
+	//gold
+	'dnd-gold',	
 		
     ];
     foreach ( $fields as $field ) {
