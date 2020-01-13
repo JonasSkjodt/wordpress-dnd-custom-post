@@ -1,4 +1,4 @@
-# Custom post type for DND character creation
+# Custom Wordpress post type for DND character creation
 
 A starter kit for custom post type DND character creation in Wordpress.
 
