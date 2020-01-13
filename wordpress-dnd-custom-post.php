@@ -24,7 +24,7 @@ function worklizard_post_admin_css() {
 	// find our custom post type
 	if ((isset($_GET['post_type']) && $_GET['post_type'] == 'dndcharacters') || (isset($post_type) && $post_type == 'dndcharacters')) :
 
-       wp_enqueue_style( 'worklizard-dnd-character-admin', plugins_url('/css/worklizard-dnd-style-admin-post.css', __FILE__), array(), '1.0' );
+       wp_enqueue_style( 'worklizard-dnd-character-admin', plugins_url('/css/dnd-admin.css', __FILE__), array(), '1.0' );
 
     endif;
 
@@ -40,11 +40,13 @@ function dnd_character_register_meta_boxes() {
     'dnd_character_display_callback', 
     );
 }
+
 /**
  * Meta box display callback.
  *
  * @param WP_Post $post Current post object.
  */
+
 function dnd_character_display_callback( $post ) {
     include plugin_dir_path( __FILE__ ) . './form.php';
 }
@@ -54,6 +56,7 @@ function dnd_character_display_callback( $post ) {
  *
  * @param int $post_id Post ID
  */
+
 function dnd_character_save_meta_box( $post_id ) {
     if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
     if ( $parent_id = wp_is_post_revision( $post_id ) ) {
@@ -136,6 +139,7 @@ add_action( 'save_post', 'dnd_character_save_meta_box' );
 /**
 * The function to register our custom post type for DnD Characters
 */
+
 function create_posttype_dnd_characters() {
  
     register_post_type( 'dndcharacters',
@@ -155,6 +159,7 @@ function create_posttype_dnd_characters() {
                 'title',
                 'excerpt',
                 'thumbnail',
+		// uncomment the following to insert category, tags, etc. in the DND custom Wordpress post
                 //'custom-fields', 
                 //'revisions',
                 ),
@@ -228,9 +233,10 @@ function custom_post_type_dnd_characters() {
  
 }
  
-/* Hook into the 'init' action so that the function
-* Containing our post type registration is not 
-* unnecessarily executed. 
-*/
+/** 
+ * Hook into the 'init' action so that the function
+ * Containing our post type registration is not 
+ * unnecessarily executed. 
+ */
  
 add_action( 'init', 'custom_post_type_dnd_characters', 0 );
