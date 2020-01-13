@@ -54,20 +54,20 @@ The main handlers are:
         'skill-stealth',
         'skill-survival',
 		
-		    //weapons
-		    'weapon-basic',
-		    'weapon-battleaxe',
-		    'weapon-crossbow',
-		    'weapon-dagger',
-		    'weapon-handaxe',
-		    'weapon-lighthammer',
-		    'weapon-longsword',
-		    'weapon-shortbow',
-		    'weapon-shortsword',
-		    'weapon-rapier',
+	//weapons
+	'weapon-basic',
+	'weapon-battleaxe',
+	'weapon-crossbow',
+	'weapon-dagger',
+	'weapon-handaxe',
+	'weapon-lighthammer',
+	'weapon-longsword',
+	'weapon-shortbow',
+	'weapon-shortsword',
+	'weapon-rapier',
 		
-		    //gold
-		    'dnd-gold',	
+	//gold
+	'dnd-gold',	
 
 
 An example to echo your custom post DND can be done like so:
