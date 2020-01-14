@@ -81,4 +81,4 @@ An example to echo your custom DND post fields can be done like so:
 
 # Demo
 
-https://worklizard.com/dnd-characters/krumdir/
+Put together with a custom template: https://worklizard.com/dnd-characters/krumdir/
