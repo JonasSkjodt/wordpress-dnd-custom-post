@@ -11,13 +11,13 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function dnd_character_choose_radio() {
 
-		/**
-		 * Add the meta box
-		 * 1st parameter gives the meta box an ID
-		 * 2nd parameter gives the headline for the meta box
-		 * 3rd parameter adds the callback function which prints the contents in the box
-		 * 4th parameter is for custom post type, ie dndcharacters
-		 */
+	/**
+	* Add the meta box
+	* 1st parameter gives the meta box an ID
+	* 2nd parameter gives the headline for the meta box
+	* 3rd parameter adds the callback function which prints the contents in the box
+	* 4th parameter is for custom post type, ie dndcharacters
+	*/
         add_meta_box(
                 'class_sectionid', 'Choose your class', 'dnd_character_choose_radio_callback', 'dndcharacters'
         );
@@ -52,7 +52,7 @@ function dnd_character_choose_radio_callback( $post ) {
         <input id="dndclass1" type="radio" name="class_radio_buttons" value="Barbarian" <?php checked( $classvalue, 'Barbarian' ); ?>>
         <label for="dndclass1">
 			<div class="entry-meta card-pad"> 
-				<img src="<?php echo plugins_url('images/dnd-barb-min1.jpg', dirname(__FILE__)); ?>">
+				<img src="<?php echo plugins_url('images/dnd-barb-min.jpg', dirname(__FILE__)); ?>">
 					<div class="class-pick-name">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 140" preserveAspectRatio="none" class="card-curve">
 							<path d="M1280 140V0S993.46 140 640 139 0 0 0 0v140z" fill="#000"></path>
