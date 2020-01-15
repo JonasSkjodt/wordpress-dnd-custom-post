@@ -57,7 +57,7 @@ details {
 	position: relative;
 	margin: 10px;
 	cursor: pointer;
-	width: 179px;
+	width: auto;
 }
 
 .dnd-checkbox label:before {
@@ -92,6 +92,8 @@ details {
 
 .races.dnd-checkbox label img {
 	height: 150px;
+	margin: 0 auto;
+	display: block;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
