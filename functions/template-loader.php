@@ -13,7 +13,7 @@ function load_dndcharacters_template( $template ) {
          * theme or child theme directories, so load it
          * from our plugin directory.
          */
-        return plugin_dir_path( __FILE__ ) . 'includes/templates/single-dnd-characters.php';
+        return plugin_dir_path( __FILE__ ) . 'templates/single-dnd-characters.php';
     }
 
     return $template;
