@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) or die( 'cheats?' );
  * License: GPL2
  */
 
-include( plugin_dir_path(__FILE__) . 'functions/dnd-cuustom-post-admin.php');
+include( plugin_dir_path(__FILE__) . 'functions/dnd-custom-post-admin.php');
 
 /**
  * Enqueue styles and scripts
